@@ -5,10 +5,10 @@
                 "StartRetentionTime":null,
                 "EndRetentionTime":null,
                 "MS1PeakPicking": {
-                    "Case": "ProfilePeaks",
+                    "Case": "ProfilePeaks"
                 },
                 "MS2PeakPicking": {
-                    "Case": "ProfilePeaks",
+                    "Case": "ProfilePeaks"
                 }
             }
             

@@ -1,4 +1,4 @@
-<tool id="proteomiqon_peptidedb" name="ProteomIQon PeptideDB" version="@VERSION@" profile="20.05">
+<tool id="proteomiqon_peptidedb" name="ProteomIQon PeptideDB" version="@VERSION@" profile="24.02">
     <description>
         creates a peptide database in the SQLite format.
     </description>

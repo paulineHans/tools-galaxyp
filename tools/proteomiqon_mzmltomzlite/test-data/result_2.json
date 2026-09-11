@@ -19,7 +19,7 @@
                                         "Case" : "Fixed",
                                         "Fields": 
                                         [
-                                            1.0,
+                                            1.0
                                         ]
                                     },
                                     "Centroid_MzTolerance" : 0.1,
@@ -35,7 +35,7 @@
                     ]
                 },
                 "MS2PeakPicking": {
-                    "Case": "ProfilePeaks",
+                    "Case": "ProfilePeaks"
                 }
             }
             

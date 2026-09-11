@@ -8,7 +8,7 @@
                     ]
                 },
                 "ModificationFilter": {
-                    "Case": "No",
+                    "Case": "No"
                 },
                 "AggregateGlobalModificationsParams": {
                     "LabeledTransform": {
@@ -638,7 +638,7 @@
                                                 "Fields": [
                                                     1.0 
                                                 ]
-                                            },
+                                            }
                                         ]
                                     ]
                                 },
