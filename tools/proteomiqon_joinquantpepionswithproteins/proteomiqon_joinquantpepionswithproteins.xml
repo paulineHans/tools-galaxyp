@@ -1,12 +1,14 @@
-<tool id="proteomiqon_joinquantpepionswithproteins" name="Proteomiqon JoinQuantPepIonsWithProteins" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="24.02">
+<tool id="proteomiqon_joinquantpepionswithproteins" name="Proteomiqon JoinQuantPepIonsWithProteins" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="25.1">
     <description>
         combines the results from ProteinInference and PSMBasedQuantification.
     </description>
     <macros>
         <import>macros.xml</import>
     </macros>
+    <expand macros= "requirements"/>
     <creator>
         <person givenName="Pauline" familyName="Hans" identifier="https://orcid.org/0009-0007-8992-9447"/>
+        <person givenName="Adrian" familyName="Zimmer" identifier="https://github.com/ZimmerA"/>
     </creator>
     <command detect_errors="exit_code"><![CDATA[
         #import re

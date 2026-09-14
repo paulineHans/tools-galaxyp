@@ -1,4 +1,4 @@
-<tool id="proteomiqon_labelfreeproteinquantification" name="Proteomiqon LabelFreeProteinQuantification" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="24.02">
+<tool id="proteomiqon_labelfreeproteinquantification" name="Proteomiqon LabelFreeProteinQuantification" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="25.1">
     <description>
         estimates protein abundances using quantified peptide ions.
     </description>
@@ -6,8 +6,10 @@
         <import>macros.xml</import>
         <import>aggregationparams.xml</import>
     </macros>
+    <expand macros= "requirements"/>
     <creator>
         <person givenName="Pauline" familyName="Hans" identifier="https://orcid.org/0009-0007-8992-9447"/>
+        <person givenName="Adrian" familyName="Zimmer" identifier="https://github.com/ZimmerA"/>
     </creator>
     <command detect_errors="exit_code"><![CDATA[
         #import re
