@@ -1,12 +1,14 @@
-<tool id="proteomiqon_mzmltomzliteionmobility" name="Proteomiqon MzMLToMzLiteIonMobility" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" python_template_version="24.02">
+<tool id="proteomiqon_mzmltomzliteionmobility" name="Proteomiqon MzMLToMzLiteIonMobility" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="25.1">
     <description>
         Convert mzML files to mzLite files, with respect to ion mobility
 	</description>
     <macros>
         <import>macros.xml</import>
     </macros>
+    <expand macro="requirements"/>
     <creator>
         <person givenName="Pauline" familyName="Hans" identifier="https://orcid.org/0009-0007-8992-9447"/>
+        <person givenName="Adrian" familyName="Zimmer" identifier="https://github.com/ZimmerA"/>
     </creator>
     <command detect_errors="exit_code">
     <![CDATA[
@@ -441,7 +443,7 @@
 
     # Further Reading
     
-    Additional information about the tool can be found in the `_documentation <https://csbiology.github.io/ProteomIQon/tools/MzMLToMzLite.html>`_.
+    Additional information about the tool can be found in the `_documentation <https://csbiology.github.io/ProteomIQon/tools/MzMLToMzLiteIonMobility.html>`_.
     ]]>
     </help>
     <citations>
