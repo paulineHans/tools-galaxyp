@@ -77,9 +77,10 @@
                 </param>
             </when>
             <when value="multi">
-                <param name="scoredPSMs" type="data" format="tabular" label="Scored PSM files" help="Specify list of peptide identifications." multiple="true"/>
+                <param name="scoredPSMs" type="data" format="tabular" label="Scored PSM files" help="Specify list of peptide identifications." multiple="true">
                     <validator type="expression" message="The metadatalist file must have 23 columns"><![CDATA[value.metadata.columns == 23]]></validator>
                     <validator type="expression" message="The metadatalist file must contain one column with the header `MissCleavages`"><![CDATA[value.metadata.column_names == "MissCleavages"]]></validator>
+                </param>
                 <param name="GroupFiles" type="boolean" checked="true" label="Groupe files" help="If checked, protein inference is carried out using peptide information from all files simultaneously."/>
             </when>
         </conditional>
