@@ -5,7 +5,7 @@
     <macros>
         <import>macros.xml</import>
     </macros>
-    <expand macros= "requirements"/>
+    <expand macro="requirements"/>
     <creator>
         <person givenName="Pauline" familyName="Hans" identifier="https://orcid.org/0009-0007-8992-9447"/>
         <person givenName="Adrian" familyName="Zimmer" identifier="https://github.com/ZimmerA"/>
@@ -48,7 +48,7 @@
         </configfile>
     </configfiles>
     <inputs>
-    <param name="instrumentOutput" type="data" format="sqlite" label="Instrument output" help="Specify mass spectrometry data you want to analyze."/>
+    <param name="instrumentOutput" type="data" format="mzlite" label="Instrument output" help="Specify mass spectrometry data you want to analyze."/>
     <param name="peptideDB" type="data" format="sqlite" label="Peptide database" help="Specify the peptide data base."/>
     <section name="ChargeStateDeterminationParams" title="Charge state determination parameters" >
         <param name="ExpectedMinimalCharge" type="integer" min="1" max="8" value="2" label="Expected minimal charge" help="Specify the minimum peptide ion charge state to consider."/>

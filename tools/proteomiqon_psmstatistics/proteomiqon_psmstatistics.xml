@@ -5,7 +5,7 @@
     <macros>
         <import>macros.xml</import>
     </macros>
-    <expand macros ="requirements"/>
+    <expand macro ="requirements"/>
     <creator>
         <person givenName="Pauline" familyName="Hans" identifier="https://orcid.org/0009-0007-8992-9447"/>
         <person givenName="Adrian" familyName="Zimmer" identifier="https://github.com/ZimmerA"/>
@@ -59,7 +59,10 @@
         </configfile>
     </configfiles>
     <inputs>
-        <param name="psm" type="data" format="tabular" label="PSM" help="Specify list of peptide spectrum matches to be scored."/>
+        <param name="psm" type="data" format="tabular" label="PSM" help="Specify list of peptide spectrum matches to be scored.">
+            <validator type="expression" message="The metadatalist file must have 23 columns"><![CDATA[value.metadata.columns == 23]]></validator>
+            <validator type="expression" message="The metadatalist file must contain one column with the header `MissCleavages`"><![CDATA[value.metadata.column_names == "MissCleavages"]]></validator> 
+        </param>
         <param name="peptideDB" type="data" format="sqlite" label="Peptide database" help="Specify the peptide data base."/>
         <conditional name="ThresholdCond">
             <param name="ProcessingType" type="select" label="Processing type" help="Specify how PSM thresholds should be estimated using semi supervised machine learning techniques (recommended) or if fixed score values should be used instead.">

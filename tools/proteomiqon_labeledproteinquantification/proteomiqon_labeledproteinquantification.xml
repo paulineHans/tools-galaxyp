@@ -6,7 +6,7 @@
         <import>aggregationparams.xml</import>
         <import>macros.xml</import>
     </macros>
-    <expand macros= "requirements"/>
+    <expand macro= "requirements"/>
     <creator>
         <person givenName="Pauline" familyName="Hans" identifier="https://orcid.org/0009-0007-8992-9447"/>
         <person givenName="Adrian" familyName="Zimmer" identifier="https://github.com/ZimmerA"/>
