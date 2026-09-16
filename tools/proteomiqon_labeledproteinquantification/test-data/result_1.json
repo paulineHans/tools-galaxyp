@@ -3,7 +3,7 @@
             {
                 "Correlation_Light_Heavy_Threshold": null,
                 "ModificationFilter": {
-                    "Case": "All"
+                    "Case": "All",
                 },
                 "AggregateGlobalModificationsParams": {
                     "LabeledTransform": null,

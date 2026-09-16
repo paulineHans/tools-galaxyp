@@ -1665,6 +1665,7 @@
             <param name="outputParamfile" value="true"/>
             <output name="out_paramfile" file="result_2.json"/>
         </test>
+        
         <test expect_num_outputs="2">
             <param name="proteinassignedquantpepions" value="sample.quantAndProt"/>
             <param name="CorrelationLightHeavyThreshold" value="1.0"/>

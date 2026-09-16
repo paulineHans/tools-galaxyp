@@ -2,7 +2,7 @@
             
             {
                 "ModificationFilter": {
-                    "Case": "All"
+                    "Case": "All",
                 },
                 "AggregatePeptideChargeStatesParams": null,
                 "AggregateModifiedPeptidesParams": null,
@@ -15,7 +15,7 @@
                             "Case": "Mean"
                         }
                     }                   
-                }
+                },
             }                
             
         

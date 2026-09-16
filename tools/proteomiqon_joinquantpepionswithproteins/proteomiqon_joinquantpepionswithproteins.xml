@@ -23,11 +23,9 @@
     <inputs>
         <param name="quantifiedpeptides" type="data" format="tabular" label="Quantified Peptides" help="Specify Quantified Peptides.">
             <validator type="expression" message="The metadatalist file must have 45 columns"><![CDATA[value.metadata.columns == 45]]></validator>
-            <validator type="expression" message="The metadatalist file must contain one column with the header `KLDiv_Observed_Theoretical_Heavy`"><![CDATA[value.metadata.column_names == "KLDiv_Observed_Theoretical_Heavy"]]></validator>
         </param>
         <param name="inferredproteins" type="data" format="tabular" label="Inferred Proteins" help="Specify Inferred Proteins.">
             <validator type="expression" message="The metadatalist file must have 6 columns"><![CDATA[value.metadata.columns == 6 ]]></validator>
-            <validator type="expression" message="The metadatalist file must contain one column with the header `Class`"><![CDATA[value.metadata.column_names]]></validator>
         </param>
         </inputs>
     <outputs>

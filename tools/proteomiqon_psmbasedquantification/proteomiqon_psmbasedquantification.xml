@@ -29,7 +29,9 @@
         <configfile name="paramfile">
             <![CDATA[
             {
-                "PerformLabeledQuantification": ${PerformLabeledQuantification},
+                "PerformLabeledQuantification": {
+                    "Case": "${PerformLabeledQuantification}"
+                },
                 "XicExtraction":
                 {
                     "ScanTimeWindow": ${XicExtraction.ScanTimeWindow},
@@ -139,10 +141,15 @@
     <inputs>
         <param name="instrumentOutput" type="data" format="mzlite" label="Instrument output" help="Specify mass spectrometry data you want to analyze."/>
         <param name="scoredPSMs" type="data" format="tabular" label="Scored PSM file" help="Specify list of peptide identifications.">
-            <validator type="expression" message="The metadatalist file must have 23 columns"><![CDATA[value.metadata.columns == 27]]></validator>
+            <validator type="expression" message="The metadatalist file must have 27 columns"><![CDATA[value.metadata.columns == 27]]></validator>
         </param>
         <param name="peptideDB" type="data" format="sqlite" label="Peptide database" help="Specify the peptide data base."/>
-        <param name="PerformLabeledQuantification" type="boolean" checked="true" label="Perform labeled quantification" help="If checked, a quantification of peptides which contain an isotopic modification is performed. Additionally, for every identified peptide we check if the mass spectrometry run contains a peak at the m/z of the labeled/unlabeled counterpart and quantify it."/>
+        <param name="PerformLabeledQuantification" type="select" label="Labeling mode">
+            <option value="Unlabeled">Unlabeled</option>
+            <option value="Labelshift">Label shift</option>
+            <option value="N15Labeling" selected="true">N15 labeling</option>
+            <option value="N15LabelingOnly">N15 labeling only</option>
+        </param>
         <section name="XicExtraction" title="XIC extraction">
             <param name="ScanTimeWindow" type="float" min="0.0" value="2.0" label="Scan timewindow" help="Specify the length of the scan time window used for XIC creation."/>
             <conditional name="MzWindow_DaTypeCond">
@@ -236,7 +243,7 @@
             <param name="instrumentOutput" value="sample.mzlite"/>
             <param name="scoredPSMs" value="sample.qpsm"/>
             <param name="peptideDB" value="sample.db"/>
-            <param name="PerformLabeledQuantification" value="true"/>
+            <param name="PerformLabeledQuantification" value="N15Labeling"/>
             <section name="XicExtraction">
                 <param name="ScanTimeWindow" value="2.0"/>
                 <section name="XicProcessing">
@@ -264,7 +271,7 @@
             <param name="instrumentOutput" value="sample.mzlite"/>
             <param name="scoredPSMs" value="sample.qpsm"/>
             <param name="peptideDB" value="sample.db"/>
-            <param name="PerformLabeledQuantification" value="true"/>
+            <param name="PerformLabeledQuantification" value="N15Labeling"/>
             <section name="XicExtraction">
                 <param name="ScanTimeWindow" value="2.0"/>
                 <conditional name="MzWindow_DaTypeCond">
@@ -297,7 +304,7 @@
             <param name="instrumentOutput" value="sample.mzlite"/>
             <param name="scoredPSMs" value="sample.qpsm"/>
             <param name="peptideDB" value="sample.db"/>
-            <param name="PerformLabeledQuantification" value="true"/>
+            <param name="PerformLabeledQuantification" value="N15Labeling"/>
             <section name="XicExtraction">
                 <param name="ScanTimeWindow" value="2.0"/>
                 <conditional name="MzWindow_DaTypeCond">
@@ -330,7 +337,7 @@
             <param name="instrumentOutput" value="sample.mzlite"/>
             <param name="scoredPSMs" value="sample.qpsm"/>
             <param name="peptideDB" value="sample.db"/>
-            <param name="PerformLabeledQuantification" value="true"/>
+            <param name="PerformLabeledQuantification" value="N15Labeling"/>
             <section name="XicExtraction">
                 <param name="ScanTimeWindow" value="2.0"/>
                 <conditional name="MzWindow_DaTypeCond">

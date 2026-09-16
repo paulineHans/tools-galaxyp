@@ -8,7 +8,7 @@
                     ]
                 },
                 "ModificationFilter": {
-                    "Case": "No"
+                    "Case": "No",
                 },
                 "AggregateGlobalModificationsParams": {
                     "LabeledTransform": {
@@ -19,7 +19,7 @@
                                     "Case": "Some",
                                     "Fields": [
                                         {
-                                            "Case": "Log2"
+                                            "Case": "Log2",
                                         }
                                     ]
                                 },
@@ -27,7 +27,7 @@
                                     "Case": "Some",
                                     "Fields": [
                                         {
-                                            "Case": "Log2"
+                                            "Case": "Log2",
                                         }
                                     ]
                                 },
@@ -35,7 +35,7 @@
                                     "Case": "Some",
                                     "Fields": [
                                         {
-                                            "Case": "Log2"
+                                            "Case": "Log2",
                                         }
                                     ]
                                 }
@@ -196,7 +196,7 @@
                                             "Case": "Some",
                                             "Fields": [
                                                 {
-                                                    "Case": "Log2"
+                                                    "Case": "Log2",
                                                 }
                                             ]
                                         },
@@ -204,7 +204,7 @@
                                             "Case": "Some",
                                             "Fields": [
                                                 {
-                                                    "Case": "Log2"
+                                                    "Case": "Log2",
                                                 }
                                             ]
                                         },
@@ -212,7 +212,7 @@
                                             "Case": "Some",
                                             "Fields": [
                                                 {
-                                                    "Case": "Log2"
+                                                    "Case": "Log2",
                                                 }
                                             ]
                                         }
@@ -373,7 +373,7 @@
                                             "Case": "Some",
                                             "Fields": [
                                                 {
-                                                    "Case": "Log2"
+                                                    "Case": "Log2",
                                                 }
                                             ]
                                         },
@@ -381,7 +381,7 @@
                                             "Case": "Some",
                                             "Fields": [
                                                 {
-                                                    "Case": "Log2"
+                                                    "Case": "Log2",
                                                 }
                                             ]
                                         },
@@ -389,7 +389,7 @@
                                             "Case": "Some",
                                             "Fields": [
                                                 {
-                                                    "Case": "Log2"
+                                                    "Case": "Log2",
                                                 }
                                             ]
                                         }
@@ -547,7 +547,7 @@
                                     "Case": "Some",
                                     "Fields": [
                                         {
-                                            "Case": "Log2"
+                                            "Case": "Log2",
                                         }
                                     ]
                                 },
@@ -555,7 +555,7 @@
                                     "Case": "Some",
                                     "Fields": [
                                         {
-                                            "Case": "Log2"
+                                            "Case": "Log2",
                                         }
                                     ]
                                 },
@@ -563,7 +563,7 @@
                                     "Case": "Some",
                                     "Fields": [
                                         {
-                                            "Case": "Log2"
+                                            "Case": "Log2",
                                         }
                                     ]
                                 }
