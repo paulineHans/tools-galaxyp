@@ -84,8 +84,8 @@
     </outputs>
     <tests>
         <test expect_num_outputs="1">
-            <param name="instrumentOutput" value="sample.mzlite"/>
-            <param name="peptideDB" value="sample.db"/>
+            <param name="instrumentOutput" location="https://zenodo.org/records/22808002/files/sample.mzlite"/>
+            <param name="peptideDB" location="https://zenodo.org/records/22808002/files/Chlamy.db"/>
             <param name="LookUpPPM" value="30"/>
             <param name="nTerminalSeries" value="A"/>
             <param name="cTerminalSeries" value="X"/>
@@ -105,8 +105,8 @@
             <param name="outputParamfile" value="false"/>
         </test>
         <test expect_num_outputs="2">
-            <param name="instrumentOutput" value="sample.mzlite"/>
-            <param name="peptideDB" value="sample.db"/>
+            <param name="instrumentOutput" location="https://zenodo.org/records/22808002/files/sample.mzlite"/>
+            <param name="peptideDB" location="https://zenodo.org/records/22808002/files/Chlamy.db"/>
             <param name="LookUpPPM" value="30"/>
             <param name="nTerminalSeries" value="B"/>
             <param name="cTerminalSeries" value="Y"/>
@@ -127,8 +127,8 @@
             <output name="out_paramfile" file="result_1.json"/>
         </test>
         <test expect_num_outputs="2">
-            <param name="instrumentOutput" value="sample.mzlite"/>
-            <param name="peptideDB" value="sample.db"/>
+            <param name="instrumentOutput" location="https://zenodo.org/records/22808002/files/sample.mzlite"/>
+            <param name="peptideDB" location="https://zenodo.org/records/22808002/files/Chlamy.db"/>
             <param name="LookUpPPM" value="30"/>
             <param name="nTerminalSeries" value="A"/>
             <param name="cTerminalSeries" value="Z"/>
@@ -149,8 +149,8 @@
             <output name="out_paramfile" file="result_2.json"/>
         </test>
         <test expect_num_outputs="2">
-            <param name="instrumentOutput" value="sample.mzlite"/>
-            <param name="peptideDB" value="sample.db"/>
+            <param name="instrumentOutput" location="https://zenodo.org/records/22808002/files/sample.mzlite"/>
+            <param name="peptideDB" location="https://zenodo.org/records/22808002/files/Chlamy.db"/>
             <param name="LookUpPPM" value="30"/>
             <param name="nTerminalSeries" value="C"/>
             <param name="cTerminalSeries" value="X"/>
