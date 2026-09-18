@@ -22,10 +22,10 @@
     </command>
     <inputs>
         <param name="quantifiedpeptides" type="data" format="tabular" label="Quantified Peptides" help="Specify Quantified Peptides.">
-            <validator type="expression" message="The metadatalist file must have at least 43 columns"><![CDATA[value.metadata.columns >= 43]]></validator>
+            <validator type="expression" message="The metadatalist file must have at least 40 columns"><![CDATA[value.metadata.columns >= 40]]></validator>
         </param>
         <param name="inferredproteins" type="data" format="tabular" label="Inferred Proteins" help="Specify Inferred Proteins.">
-            <validator type="expression" message="The metadatalist file must have 6 columns"><![CDATA[value.metadata.columns == 6 ]]></validator>
+            <validator type="expression" message="The metadatalist file must have at least 5 columns"><![CDATA[value.metadata.columns >= 5 ]]></validator>
         </param>
         </inputs>
     <outputs>
